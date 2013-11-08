@@ -67,16 +67,16 @@ swiftmailer:
 
 services:
     my_service_1:
-        class: stdClass
+        class: Acme\DemoBundle\Twig\Extension\DemoExtension
         calls:
             - [setRequest, ['@request=']]
     my_service_2:
-        class: stdClass
+        class: Acme\DemoBundle\Twig\Extension\DemoExtension
         arguments: ['@request=']
     my_service_3:
-        class: stdClass
+        class: Acme\DemoBundle\Twig\Extension\DemoExtension
         properties:
             request: '@request='
     my_service_4:
-        class: stdClass
+        class: Acme\DemoBundle\Twig\Extension\DemoExtension
         arguments: [['@request=']]
