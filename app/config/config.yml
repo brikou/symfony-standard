@@ -64,3 +64,19 @@ swiftmailer:
     username:  %mailer_user%
     password:  %mailer_password%
     spool:     { type: memory }
+
+services:
+    my_service_1:
+        class: stdClass
+        calls:
+            - [setRequest, ['@request=']]
+    my_service_2:
+        class: stdClass
+        arguments: ['@request=']
+    my_service_3:
+        class: stdClass
+        properties:
+            request: '@request='
+    my_service_4:
+        class: stdClass
+        arguments: [['@request=']]
