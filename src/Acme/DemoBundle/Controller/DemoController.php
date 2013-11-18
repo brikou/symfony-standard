@@ -28,7 +28,9 @@ class DemoController extends Controller
      */
     public function helloAction($name)
     {
-        return array'name' => $name);
+        $this->get('logger')->crit(sprintf('Error while processing a Connect payment HTTP callback. Request: %s. Exception: "%s". Message: "%s"', (string) $request), get_class($e), $e->getMessage()));
+
+        return array('name' => $name);
     }
 
     /**
