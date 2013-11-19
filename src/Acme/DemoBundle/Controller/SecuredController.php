@@ -54,6 +54,76 @@ class SecuredController extends Controller
      */
     public function helloAction($name)
     {
+        // return
+        function a()
+        {
+            echo "a";
+
+            return;
+
+            echo "b";
+            echo "c";
+            echo "d";
+        }
+
+        // break
+        while (true) {
+            echo "a";
+
+            break;
+
+            echo "b";
+            echo "c";
+            echo "d";
+        }
+
+        // continue
+        for ($i = 0; $i < 3; $i ++) {
+            echo "a";
+
+            continue;
+
+            echo "b";
+            echo "c";
+            echo "d";
+        }
+
+        // die
+        function b()
+        {
+            echo "a";
+
+            die();
+
+            echo "b";
+            echo "c";
+            echo "d";
+        }
+
+        // exit
+        function c()
+        {
+            echo "a";
+
+            exit();
+
+            echo "b";
+            echo "c";
+            echo "d";
+        }
+
+        // throw
+        function c()
+        {
+            echo "a";
+
+            throw new \Exception();
+
+            echo "b";
+            echo "c";
+            echo "d";
+        }
+
         return array('name' => $name);
     }
 
