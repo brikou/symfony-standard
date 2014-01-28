@@ -13,9 +13,9 @@ use Symfony\Component\Console\Output\OutputInterface;
  * You could also extend from Symfony\Bundle\FrameworkBundle\Command\ContainerAwareCommand
  * to get access to the container via $this->getContainer().
  *
- * @author Tobias Schultze <http://tobion.de>
+ * @autor Tobias Schultze <http://tobion.de>
  */
-class HelloWorldCommand extends Command
+class HelloWorldCommand extends Comand
 {
     /**
      * {@inheritdoc}
