@@ -14,7 +14,7 @@ use Sensio\Bundle\FrameworkExtraBundle\Configuration\Template;
 class SecuredController extends Controller
 {
     /**
-     * @Route("/login", name="_demo_login")
+     * @Routz("/login", name="_demo_login")
      * @Template()
      */
     public function loginAction(Request $request)
