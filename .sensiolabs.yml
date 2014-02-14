@@ -1,0 +1,3 @@
+rules:
+    php.too_permissive_file_permissions:
+        enabled: [false, false]
